@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Hello Coders</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section id="HistoriaWWW">
+                    <section>
+                        <h1>Un poco de história</h1>
+                    </section>
+                    <section>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jzxc_rR6S-U" frameborder="0" allowfullscreen></iframe>
+                    </section>
+                    <section id="1Version">
+                        <h3>Marzo de 1989</h3>
+                        <p>Se presenta una propuesta de gestión de la información internamente</p>
+                        <p><a href="https://home.cern/">CERN</a></p>
+                    </section>
+                    <section id="NacimientoWWW">
+                        <h3>23 de Agosto de 1991</h3>
+                        <p>Nace la World Wide Web</p>
+                        <p>Tim Berner-Lee</p>
+                        <img src="/img/timbernerlee.jpg" />
+                    </section>
+                    <section>
+                        <h3>Desarrolló los pilares de la WWW</h3>
+                        <ul>
+                            <li> El lenguaje HTML </li>
+                            <li> Las direciones URI </li>
+                            <li> Protocolo de transferencia HTTP </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>1993 se inicia la expansión</h3>
+                        <p>El CERN libera su código</p>
+                        <p>Aparecen las primeras páginas web</p>
+                        <p>Eran sencillas y contenían hipervículos.</p>
+                        <img src="/img/1Webcern.gif"/>
+                    </section>
+                    <section>
+                        <h3>1997 Nacimiento de Google</h3>
+                        <p>Dos estudiantes de Stanford creafon Google.</p>
+                        <p>Larry Page y Sergey Brin</p>
+                        <img src="/img/creadoresgoogle.jpg" />
+                    </section>
+                    <section data-background="/img/google-1997.png">
+                    </section>
+                    <section>
+                        <h3>Ejemplos de Web Actuales </h3>
+                        <p><a href="http://www.spokespedicabs.com/">spokespedicabs.com</a></p>
+                        <p><a href="http://curiouscrittersclub.com/en/experience">curiouscrittersclub.com/en/experience</a></p>
+                        <p><a href="http://www.ortizleon.es/">http://www.ortizleon.es/</a></p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Que podemos hacer hoy en día con Desarrollo Web</h3>
+                        <h2>Lo que el entorno de ejecución y html5 nos permite.</h2>
+                        <a href="https://whatwebcando.today/">https://whatwebcando.today/</a>
+                    </section>
+                    <section>
+                        <h3>Que tecnologías podemos aplicar.</h3>
+                        <ul>
+                            <li>WebApps.</li>
+                            <li><a href="https://developers.google.com/web/progressive-web-apps/">Progressive Web Apps.</a></li>
+                            <li><a href="http://ionicframework.com/">Aplicaciones Híbridas.</a></li>
+                            <li><a href="https://electronjs.org/">Aplicaciones Escritorio.</a></li>
+                        </ul>
+                    </section>
+                </section>
+                <section id="HTML">
+                    <section data-background="/img/queeshtml.png">
+                    </section>
+                    <section>
+                        <h3>Que es HTML</h3>
+                        <h4>Lenguaje de Programación</h4>
+                        <p>Es un <b>lenguaje formal </b>diseñado para expresar procesos que pueden ser realizados por ordenadores. Se forman por símbolos, sintaxis y semántica</p>
+                    </section>
+                    <section data-background="/img/html5.png">
+                        <ul style="color: black;">
+                            <li>Todos los navegadores lo utilizan</li>
+                            <li>Depende de la w3c</li>
+                            <li>Es muy fácil de aprender</li>
+                            <li>Su versión actual es HTML5</li>
+                        </ul>
+                    </section>
+                </section>
+                <section id="elementos">
+                    <section data-background="/img/html5.jpeg">
+
+                    </section>
+                    <section id="etiquetas">
+                        <h3>Que es una etiqueta</h3>
+                        <p>Es el componente básico de un documento HTML</p>
+                        <p>Se crean en forma de definiciones con un nombre</p>
+                        <code class="hljs" data-trim contenteditable>
+                            [etiqueta]Contenido[/etiqueta]
+                        </code>
+                    </section>
+                    <section id="atributos">
+                        <h3>Que son los atributos</h3>
+                        <p>Son las características que definen el comportamiento especifico para una etiqueta dada</p>
+                        <p>No siguen reglas para su ordenamiento y varían de acuerdo a la etiquet que se aplican</p>
+                        <code class="hljs" style="font-size:25px;" data-trim contenteditable>
+                            [etiqueta atributo="valor"]Contenido[/etiqueta]
+                        </code>
+                    </section>
+                    <section>
+                        <h3>Estructura básica de un documento html</h3>
+                        <img src="/img/estructuradochtml.jpg"/>
+                    </section>
+                    <section>
+                        <h3>Doctype</h3>
+                        <code class="hljs" data-trim contenteditable>
+                           [!DOCTYPE html]
+                        </code>
+                        <p>Sirve para identificar la versión de html a utilizar</p>
+                        <p>Por defecto la versión actual</p>
+                        <code class="hljs" style="font-size:25px;" data-trim contenteditable>
+                            [!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"]
+                        </code>
+                    </section>
+                    <section>
+                        <h3>HTML</h3>
+                        <code class="hljs"  data-trim contenteditable>
+                            [html]
+                        </code>
+                        <p>Indica al navegador que se trata de un documento HTML</p>
+                    </section>
+                    <section>
+                        <h3>HEAD</h3>
+                        <code class="hljs"  data-trim contenteditable>
+                            [head]
+                        </code>
+                        <p>En el head habitualmente se introduce todos los elementos de precarga</p>
+                        <ul>
+                            <li>title</li>
+                            <li>style</li>
+                            <li>base</li>
+                            <li>meta</li>
+                            <li>script</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>META CHARSET</h3>
+                        <code class="hljs"  data-trim contenteditable>
+                            [meta charset=UTF-8]
+                        </code>
+                        <p>Índica el tipo de codificacicón</p>
+                        <p>Uso de ñ, tildes, símbolos, etc.</p>
+                    </section>
+                    <section>
+                        <h3>TITLE</h3>
+                        <code class="hljs"  data-trim contenteditable>
+                            [title]
+                        </code>
+                        <p>Índica el título de la página</p>
+                        <p>Define un titulo que aparecerá en la barra del explorador</p>
+                        <p>Será el título que aparecera en la barra de favoritos</p>
+                        <p>Será el título que aparecerá en los buscadores y se indexará</p>
+                    </section>
+                    <section>
+                        <h3>BODY</h3>
+                        <code class="hljs"  data-trim contenteditable>
+                            [body]
+                        </code>
+                        <p>Dentro de este tag se incluirá el cuerpo del documento</p>
+                        <p>El mismo contendrá elementos como imagenes, listas, etc.</p>
+                    </section>
+                </section>
+                <section>
+                    <section data-background="https://media.giphy.com/media/l4CCTAaQAnh7AzYBi/giphy.gif">
+                    </section>
+                    <section>
+                        <h3>Actividad</h3>
+                        <p>Crear nuetro primer proyecto</p>
+                        <p>Estructura de un documento en html</p>
+                    </section>
+                    <section data-background="./img/estructuradochtml.jpg">
+                    </section>
+                </section>
+                <section>
+                    <section id="titulos">
+                        <h3>Titulos</h3>
+                        <p>Los titulos se describen con la etiqueta h</p>
+                        <code class="hljs"  data-trim contenteditable>
+                            [h1]Título 1[/h1]
+                            [h2]Título 2[/h2]
+                            [h3]Título 3[/h3]
+                            [h4]Título 4[/h4]
+                            [h5]Título 5[/h5]
+                            [h6]Título 6[/h6]
+                        </code>
+                    </section>
+                    <section id="Parrafos">
+                        <h3>Parrafos</h3>
+                        <p>Los parrafos se escriben con la etiqueta p</p>
+                        <code class="hljs"  data-trim contenteditable>
+                            [p]Este es nuestro primer parrafo[/p]
+                            <br>
+                            [p]Este es nuestro segundo parrafo[/p]
+                            <br>
+                            [p]Este es nuestro tercer parrafo[/p]
+                        </code>
+                    </section>
+                    <section id="links">
+                        <h3>Links</h3>
+                        <p>[a href=""]</p>
+                        <code class="hljs"  data-trim contenteditable>
+                            [a href="https://www.google.com"]Vamos a Google[/a]
+                        <br>
+                            [a href="./segunda.html"]Segunda pagina[/a]
+                         <br>
+                            [a href="mailto:"]Enviar correo [/a]
+                        </code>
+                    </section>
+                    <section>
+                        <h3>Atributo target</h3>
+                        <p>target</p>
+                        <code class="hljs"  data-trim contenteditable>
+                            [a href="https://www.google.com" target="_blank"]Vamos a Google[/a]
+                            <br>
+                            [a href="https://www.google.com" target="_self"]Vamos a Google[/a]
+                        </code>
+                    </section>
+                    <section>
+                        <h3>Etiqueta de imagen</h3>
+                        <p>La etiqueta [img] nos permite añadir imágenes a nuestra web</p>
+                        <code class="hljs"  data-trim contenteditable>
+                            [img src="http://marvelipsum.com/200/200/random"/]
+                            <br>
+                        </code>
+                        <p> A la vez podemos utilizar los atributos [HEIGHT] [WIDTH]</p>
+                        <p>para modificar la anchura y la altura de la imagen</p>
+                    </section>
+                    <section id="listas desordenadas">
+                        <h3>Listas Desordenadas</h3>
+                        <p>Se utilizan la etiqueta [ul][il][/il][/ul]</p>
+                        <code class="hljs"  data-trim contenteditable>
+                            [ul] <br>
+                            [il] 1º Elemento [/il]<br>
+                            [il] [a href="www.google.es"]2º Elemento a google[/a] [/il]<br>
+                            [/ul]
+                        </code>
+                    </section>
+                    <section id="listas ordenadas">
+                        <h3>Listas Ordenadas</h3>
+                        <p>Se utilizan la etiqueta [ol][il][/il][/ol]</p>
+                        <code class="hljs"  data-trim contenteditable>
+                            [ol] <br>
+                            [il] 1º Elemento [/il]<br>
+                            [il] [a href="www.google.es"]2º Elemento a google[/a] [/il]<br>
+                            [/ol]
+                        </code>
+                    </section>
+                    <section>
+                        <h3>Etiquetas y atributos para dar formato</h3>
+                        <code class="hljs"  data-trim contenteditable>
+                            [body bgcolor="#cccc" background="imagen"]<br>
+                            [font color="red"][h1]Titulo[/h1][/font]<br>
+                            [p]Es una [strong]prueba[/strong][/p]<br>
+                            [p]Lanzando es un [em]prueba[/em][/p]<br>
+                            [p align="center"]Es otro parrafo centrado[/p]
+                        </code>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Etiquetas propias HTML5</h3>
+                    </section>
+                    <section>
+                        <h4>Etiqueta Header</h4>
+                        <pre><code class="hljs"  data-trim contenteditable>
+                            [header]
+                        </code></pre>
+                        <p>Etiqueta para definir la cabecera de la estructura de la página. Aquí pondremos el nombre del sitio , logotipo etc.</p>
+                    </section>
+                    <section>
+                        <h4>Etiquetas Section y Article</h4>
+                        <pre><code class="hljs"  data-trim contenteditable>
+                            [section]
+                               [article]
+                                      <h2>Titulo</h2>
+                                      <p>parrafo.</p>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h5>Etiqueta Aside</h5>
+                        <pre><code class="hljs"  data-trim contenteditable>
+                          [aside]
+                            [h3] Articulo
+                            [p] Parrafo
+                        </code></pre>
+                        <p>Etiqueta para definir las barras laterales.</p>
+                    </section>
+                    <section>
+                        <h5>Etiqueta Footer</h5>
+                        <pre><code class="hljs"  data-trim contenteditable>
+                           [footer]
+                            [p]Creado por ...
+                        </code></pre>
+                        <p>Etiqueta para definir el footer de nuestra página.</p>
+                    </section>
+                    <section>
+                        <h3>Ejemplo HTML5</h3>
+                        <pre><code class="hljs"  data-trim contenteditable>
+[!DOCTYPE html]
+
+[html lang="es"]
+
+[head]
+    [title]Titulo de la web[/title]
+    [meta charset="utf-8" /]
+[/head]
+[body]
+    [header]
+       [h1]Mi sitio web[/h1]
+       [p]Mi sitio web creado en html5[/p]
+    [/header]
+    [section]
+       [article]
+           [h2]Titulo de contenido[h2]
+           [p] Contenido (ademas de imagenes, citas, videos etc.) [/p]
+       [/article]
+    [/section]
+    [aside]
+       [h3]Titulo de contenido[/h3]
+           [p]contenido[/p]
+    [/aside]
+    [footer]
+        Creado por mi el 2017
+    [/footer]
+[/body]
+[/html]                 </code>></pre>
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

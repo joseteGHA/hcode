@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>2º Sesión Valencia Coders Level I</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			    <section>
+					<div style="background-color: white;"><img src="img/Logo%20hello_code.png"></div>
+					<h3>CSS</h3>
+                </section>
+				<section>
+					<section>
+						<h3>Historia del CSS</h3>
+					</section>
+					<section>
+						<h3>¿Que es CSS?</h3>
+						<p>CSS es la abreviatura empleado para referirse a Cascade Style Sheets(Hojas de Estilo en Cascada)</p>
+						<p>Con el uso de CSS se le índica al documento el estilo de cada elemento en la página a traves de un archivo externo o directamente en el código HTML</p>
+					</section>
+					<section>
+						<h3>Historia del CSS</h3>
+						<p>El CSS ha evolucionado al igual que el HTML</p>
+						<p><a href="https://www.w3c.es/">W3C</a> Mantiene el estandar.</p>
+						<p>En el año 1995 se crea la primera versión.</p>
+						<p>En el año 1998 se publica la segunda especificación</p>
+						<p>En el año 2009 se publica la especificación 2.1</p>
+						<p>En la actualidad estamos en la especificación 3.0</p>
+					</section>
+					<section>
+						<h3>Otras tecnologías que se han desarrollado a partir de CSS</h3>
+						<ul>
+							<li><a href="http://sass-lang.com/">Sass</a></li>
+							<li><a href="http://lesscss.org/">Lesscss</a></li>
+							<li><a href="http://postcss.org/">PostCSS</a></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Ejemplos</h3>
+						<a href="https://www.awwwards.com/websites/css3/">www.awwwards.com</a>
+					</section>
+				</section>
+                <section>
+                    <section>
+                        <h3>Que podemos hacer con CSS3</h3>
+                        <ul>
+                            <li>Estructura y maquetar el diseño completo del sitio Web.</li>
+                            <li>Generar una estructura modular para los estilos</li>
+                            <li>Crear transacciones interacciones simples</li>
+                            <li>Crear objetos gráficamente sin incluir imágenes que ensucien el HTML</li>
+                            <li>Generar entornos aptos para móviles.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Qué evitar.</h3>
+                        <ul>
+                            <li>Limitarse a formatear textos u objetos</li>
+                            <li>Utilizar siempre la etiqueta sytle o el atribo del mismo nombre en el HTML</li>
+                            <li>Repetir definiciones de caractersíticas generales.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Lo que hay que tener en cuenta del CSS</h3>
+                        <ul>
+                            <li>Todos los objetos son cajas.</li>
+                            <li>Funciona a traves de selectores.</li>
+                            <li>Los objetos son modificados con propiedades.</li>
+                            <li>Hay propieades/selectores incompatibles con algunas navegadores.</li>
+                            <li>Las propieades se heredan de padres e hijos.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Ejemplo de CSS3</h3>
+                        <pre><code class="hljs">
+nombre-del-selector
+{
+     /*Comentario*/
+    nombre-de-propiedad: valor;
+    nombre-de-propiedad: "valor largo";
+          ...
+    nombre-de-la-n-propiedad: valor;
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>DOM(DOCUMENT OBJECT MODEL)</h3>
+                        <img src="/img/DOM.png" style="height:550px!important"/>
+                    </section>
+                    <section>
+                        <p>Cuando una página Web se carga en el navegador Web se crea lo que se conoce como DOM, y se construye como un árbol de objetos.</p>
+                        <p>Es a través de este árbol que podemos aplicar estilos a cada uno de los elementos de nuestra página HTML y a través de CSS aplicar un diseño específico a cada elemento. Esto lo haremos a traés de selectores</p>
+                    </section>
+                    <section>
+                        <h3>SELECTORES EN CSS</h3>
+                        <p>Selectores de Etiqueta</p>
+                        <p>Selectores ID:</p>
+                        <ul style="font-size: 35px!important">
+                            <li>Estos selectores se utilizar para especificar el estidlo de un elemento único en la página Web actual</li>
+                            <li>Para definir un ID de CSS se utiliza el operador #</li>
+                            <li>SE debe aplicar el atributo id en los elementos</li>
+                        </ul>
+                        <p>Selectores Class:</p>
+                        <ul style="font-size: 35px!important">
+                            <li>Estos selectores se utilizan para especificar el estilo de un grupo de elementos</li>
+                            <li>Para definir una clase CSS se utilizar el operador punto (.)</li>
+                            <li>Se debe aplicar el atributo class en los elementos HTML</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Introducción a BOXMODEL</h3>
+                        <img src="/img/boxmodel.png"/>
+                    </section>
+                    <section>
+                        <h3>Propiedades Height y Width</h3>
+                        <p data-height="265" data-theme-id="0" data-slug-hash="rYXNPV" data-default-tab="css,result" data-user="jaroso78" data-embed-version="2" data-pen-title="Boxmodel" class="codepen">See the Pen <a href="https://codepen.io/jaroso78/pen/rYXNPV/">Boxmodel</a> by Xavi (<a href="https://codepen.io/jaroso78">@jaroso78</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Propiedad Border</h3>
+                        <p data-height="265" data-theme-id="0" data-slug-hash="bYXGPO" data-default-tab="css,result" data-user="jaroso78" data-embed-version="2" data-pen-title="BoxModel Border" class="codepen">See the Pen <a href="https://codepen.io/jaroso78/pen/bYXGPO/">BoxModel Border</a> by Xavi (<a href="https://codepen.io/jaroso78">@jaroso78</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Propiedad OutLine</h3>
+                        <p data-height="265" data-theme-id="0" data-slug-hash="KyOwPO" data-default-tab="css,result" data-user="jaroso78" data-embed-version="2" data-pen-title="BoxModel Outline" class="codepen">See the Pen <a href="https://codepen.io/jaroso78/pen/KyOwPO/">BoxModel Outline</a> by Xavi (<a href="https://codepen.io/jaroso78">@jaroso78</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                    <section>
+                        <h3>Propiead Margin</h3>
+                        <p data-height="265" data-theme-id="0" data-slug-hash="yPmyOy" data-default-tab="css,result" data-user="jaroso78" data-embed-version="2" data-pen-title="BoxModel Margin" class="codepen">See the Pen <a href="https://codepen.io/jaroso78/pen/yPmyOy/">BoxModel Margin</a> by Xavi (<a href="https://codepen.io/jaroso78">@jaroso78</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Donde podemos definir los estilos.</h3>
+                        <ul>
+                            <li>Como un atributo de la etiqueta</li>
+                            <li>Extraelo en un archivo externo.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Como atributo en la etiqueta</h3>
+                        <pre><code class="hljs">
+[p style="color: red;"]Importante[/p]
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Como archivo externo al documento.</h3>
+                        <p>Dentro de la etiqueta head incluimos la siguiente línea</p>
+                        <pre><code class="hljs">
+[link href="css/estilos.css" type="text/css" rel="stylesheet"]
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Formato de Texto</h1>
+                        <p>Como dar formato al texto</p>
+                    </section>
+                    <section>
+                        <h3>Propiedad color</h3>
+                        <p>Se puede establecer en formato hexadecimal o rgba</p>
+                        <pre><code class="hljs">color:#ff5bc3;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad font-family</h3>
+                        <p>Defin la familia tipográfica</p>
+                        <pre><code class="hljs">font-family:"Avant Garde CE",Helveltica, sans-serif;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad font-size</h3>
+                        <p>Define el tamaño del texto (px, em)</p>
+                        <pre><code class="hljs">font-size: 50px;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad font-weight</h3>
+                        <p>Establece el peso/grosor del texto</p>
+                        <p>Puede ser bold, normal o el valor en puntos de 100 a 900)</p>
+                        <pre><code class="hljs">font-weight:bold;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad font-sytle</h3>
+                        <p>Cambia el estilo de texto</p>
+                        <p>Puede ser: normal, italic, oblique</p>
+                        <pre><code class="hljs">font-style:italic;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad text-transform</h3>
+                        <p>Fuerza la utilización de un estilo de escritura</p>
+                        <p>Valores posibles:uppercase, lowercase, capitalize</p>
+                        <pre><code class="hljs">text-transform:uppercase;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad text-decoration</h3>
+                        <p>Define la decoración del texto</p>
+                        <p>Valores posibles: none, underline, overline y line-through</p>
+                        <pre><code class="hljs">text-decoration:underline;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad text-indent</h3>
+                        <p>Genera un sangrado para el texto</p>
+                        <p>Sus valores pueden ser positivos o negativos</p>
+                        <pre><code class="hljs">text-indent:20px;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad text-align</h3>
+                        <p>Alinea el exto de la caja</p>
+                        <p>Sus valores posibles: left, right, center, justify</p>
+                        <pre><code class="hljs">text-align:right;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad letter-spacing</h3>
+                        <p>Genera una seraparación entre carácteres.</p>
+                        <p>Pueden ser también positivos o negativos</p>
+                        <pre><code class="hljs">letter-spacing:3px;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad line-height</h3>
+                        <p>Aumenta o reduce el interlineado de un texto</p>
+                        <pre><code class="hljs">line-height:30px;</code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Trabajando con los fondos de nuestros elementos.</h1>
+                    </section>
+                    <section>
+                        <h3>Propiedad background-color</h3>
+                        <p>Define el color de fondo para el objeto</p>
+                        <p>Puede ser hexadecimal o rgba</p>
+                        <pre><code class="hljs">background-color: #3f9ff5</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad background-image</h3>
+                        <p>Establece una imagen de fondo para el objeto</p>
+                        <pre><code class="hljs">background-image:url(../images/fondo.jpg);</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad background-repeat</h3>
+                        <p>Define la forma de repetición del fondo</p>
+                        <p>Sus valores pueden ser: repeat, repeat-y, repeat-x y no repeat</p>
+                        <pre><code class="hljs">background-repeat: repeat-y;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad background-position</h3>
+                        <p>Índica la posición del fondo</p>
+                        <p>Sus valores son: center, top, left, right, bottom y coordenadas x,y</p>
+                        <pre><code class="hljs">background-position: top center;</code></pre>
+                    </section>
+                    <section>
+                        <h3>Propiedad background-size</h3>
+                        <p>Define el tamaño del fondo del objeto</p>
+                        <pre><code class="hljs">background-size:cover;</code></pre>
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

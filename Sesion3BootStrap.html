@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>3º Sesión Valencia Coders Level I</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			    <section>
+					<h1>VALENCIA CODERS I</h1>
+					<h3>3º Sesión.</h3>
+                </section>
+                <section>
+                    <section>
+                        <h3>Que es BootStrap</h3>
+                        <p>Es un framework web de código abierto para el diseño sitios y aplicaciones web</p>
+                        <p>Es un framework creado Mark Otto y Jacob Thornot de Twitter</p>
+                        <p>Se liberó en el agosto 2011</p>
+                        <p> Y en 2012 fue el proyecto más popular de Github</p>
+                        <p>Su versión actual es la 4.</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Como máquetamos nuestra web con BootStrap</h1>
+                        <h4>Grid System BootStrap</h4>
+                    </section>
+                    <section>
+                        <h3>Container</h3>
+                        <p>Es el contendor donde introduciremos todos nuestros elementos de BootStrap</p>
+                        <pre><code class="hljs">
+[div class="container"]
+[div class="container-fluid"]
+                            </code></pre>
+                    </section>
+                    <section>
+                        <h3>Row</h3>
+                        <p>Corresponde a una fila donde podemos introducir las columnas.</p>
+                        <pre><code class="hljs">
+[div class="container"]
+    [div class="row"]
+                            ....
+                            </code></pre>
+                    </section>
+                    <section>
+                        <h3>Col</h3>
+                        <p>Sistema de columnas BootStrap divide las pantallas en 12 columnas</p>
+                        <pre><code class="hljs">
+[div class="container"]
+  [div class="row"]
+    [div class="col"]
+      [p]Columna 1[/p]
+    [/div]
+    [div class="col"]
+      [p]Columna 2[/p]
+    [/div]
+                        </code></pre>
+                    </section>
+                    <section data-background="/img/bootstrapcolumns.jpg">
+
+                    </section>
+                    <section>
+                        <h3>Podemos establecer y maquetar los límites de las diferentes secciones </h3>
+                        <pre><code class="hljs">
+[div class="container"]
+    [div class="row"]
+        [div class="col-6"]
+            [p]Columna 1[/p]
+        [/div]
+        [div class="col-6"]
+            [p]Columna 2[/p]
+        [/div]
+
+                       </code></pre>
+                    </section>
+                    <section>
+                        <h3>Inherentemente nos permite crear web responsive</h3>
+                        <p>Dispone de puntos de rotura</p>
+                        <img src="/img/puntosroturabootstrap.png"/>
+                    </section>
+                    <section>
+                        <h3>Anchura de columna en función del contenido.</h3>
+                        <pre><code class="hljs">col-md-auto</code></pre>
+                    </section>
+                    <section>
+                        <h3>Sistemas de alineación del contenido</h3>
+                        <pre><code class="hljs">
+[div class="container"]
+    [div class="row align-items-start"]
+        [div class="col"]
+    ...
+    [div class="row align-items-center"]
+    ...
+    [div class="row align-items-end"]
+
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Offseting columns</h3>
+                        <p>Para mover columna derechas.</p>
+                        <pre><code class="hljs">
+[div class="row"]
+    [div class="col-md-4"].col-md-4[/div]
+    [div class="col-md-4 offset-md-4"].col-md-4 .offset-md-4[/div]
+[/div]
+
+                        </code></pre>
+                    </section>
+                </section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

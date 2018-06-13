@@ -1,0 +1,82 @@
+.logo
+{
+  width: 200px;
+}
+
+.navbar
+{
+  background-color: rgba(100,100,100,0.7)
+}
+
+/*Titulos*/
+h1, h2, h3, h4, h5, h6
+{
+  font-family:"Raleway";
+  font-weight: 300;
+  color: #333;
+}
+/*Cambiamos el color del link en el href*/
+a{
+  color:#fff;
+}
+a:link, a:hover{  /*Cambiamos el link y con el hover*/
+  color:#fff;
+}
+
+#header_wrapper{
+  background:url("../img/woman-tech.jpeg") no-repeat center top;
+  background-position:center center;
+  text-align:center;
+  min-height: 800px;
+  width:100%;
+  background-size:cover;
+}
+
+.vertical-center {
+  min-height: 600px;  /* Fallback for browsers do NOT support vh unit */
+  display: flex;
+  align-items: center;
+}
+
+.logo_home{
+  background-color: rgba(255,255,0,0.8);
+}
+
+#partners_wrapper{
+  background-color: black;
+}
+
+#localizacion_wrapper{
+  background-color: rgb(227,202,222)
+}
+
+.localizacion_box{
+  height: 450px;
+  width: 540px;
+  background-color: rgba(255,255,255,0.8);
+  padding-top:80px;
+}
+
+#inscripcion_wrapper{
+  min-height: 300px;
+  background-color: rgba(168, 213, 233,0.5);
+}
+
+button{
+  font-size: 90px!important;
+}
+
+#footer_wrapper{
+    background: #2f2f2f;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+#footer_wrapper h5{
+  color:white;
+}
+
+#footer_wrapper i{
+  color:white;
+}
