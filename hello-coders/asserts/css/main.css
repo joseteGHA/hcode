@@ -24,7 +24,7 @@ a:link, a:hover{  /*Cambiamos el link y con el hover*/
 }
 
 #header_wrapper{
-  background:url("../img/woman-tech.jpeg") no-repeat center top;
+  background:url("../img/fondo.jpg") no-repeat center top;
   background-position:center center;
   text-align:center;
   min-height: 800px;
